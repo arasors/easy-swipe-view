@@ -2897,10 +2897,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-easy-swipe-view@^1.1.14:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/easy-swipe-view/-/easy-swipe-view-1.1.14.tgz#694e16da0deceb9915e86b8c1f078c6f17e6da75"
-  integrity sha512-OmxqRfrxu3wT69Ay5DnwHeH2VmgGtA1VNJw4/lAA1fU6FkDe12I52W1O0f+zFxlc97koxWiA1CG160KT92yVjg==
+easy-swipe-view@^1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/easy-swipe-view/-/easy-swipe-view-1.1.15.tgz#f2eb2ef4465b14f07edcfb468cc382a9f7ee9cab"
+  integrity sha512-q9QM3VWgbYFuk2IDD4UTsvr3wwaaTXUCcoIj8iGKCZdtqehccmQkr4d1I+bmEBxUqe/gUf4vEzHvbHEmzleiRQ==
 
 ee-first@1.1.1:
   version "1.1.1"

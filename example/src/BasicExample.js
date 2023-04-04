@@ -48,9 +48,7 @@ export default function BasicExample() {
                         paddingBottom: 16,
                         paddingLeft: 4,
                         paddingRight: 4,
-                        alignItems: 'center',
-                        borderRadius: 5,
-                        overflow: "hidden"
+                        alignItems: 'center'
                     }}
                 >
                     <Text style={{color: "#f3f3f3"}}>So easy</Text>
@@ -58,7 +56,7 @@ export default function BasicExample() {
             </SwipeView>
 
 
-            <TouchableHighlight onPress={() => swipeRef.current.resetPosition()}>
+            <TouchableHighlight onPress={() => swipeRef.current.resetPosition()} style={{marginTop: 10, borderRadius: 10, paddingHorizontal:15, paddingVertical: 5}} underlayColor={"#ddd"}>
                 <Text>Reset</Text>
             </TouchableHighlight>
             {/*<Text style={{color: "#161616", marginTop: 20}}>{pos}</Text>*/}
