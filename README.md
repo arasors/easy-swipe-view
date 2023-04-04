@@ -1,7 +1,7 @@
 
-# easy-swipe-list
+# easy-swipe-view
 
-A simple and easy-to-use swipeable list component for React Native projects, built with Reanimated v2 and react-native-gesture-handler.
+A simple and easy-to-use swipeable list component for `React Native` projects, built with Reanimated v2 and react-native-gesture-handler.
 
 - Smooth gesture interactions & snapping animations.
 - Compatible with `Reanimated` v2
@@ -14,14 +14,14 @@ A simple and easy-to-use swipeable list component for React Native projects, bui
 First, make sure you have installed [react-native-reanimated v2](https://docs.swmansion.com/react-native-reanimated/docs/installation) and [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs/getting-started) in your project:
 Then, 
 ```
-install `easy-swipe-list`:
+install `easy-swipe-view`:
 ```
 ## Usage
 
 1. Import the `SwipeView` component and the `EasySwipe` context:
 
 ```javascript
-import { SwipeView, EasySwipe } from 'easy-swipe-list';
+import { SwipeView, EasySwipe } from 'easy-swipe-view';
 ```
 2. Wrap your list component (e.g., FlatList or SectionList) with the EasySwipe.Provider:
 ```javascript
