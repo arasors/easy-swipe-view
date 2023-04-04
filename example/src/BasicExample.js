@@ -1,10 +1,11 @@
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import { SwipeView, LeftButton, RightButton } from 'easy-swipe-view';
 
 export default function BasicExample() {
 
     const swipeRef = useRef(null);
+    const [pos, setPos] = useState(0);
     const MyLeftButtonComponent = () => (
         <LeftButton
             onPress={() => {}}
@@ -37,25 +38,31 @@ export default function BasicExample() {
                 maxRight={150}
                 onLeftSwipe={() => console.log("On Swipe!")}
                 onRightSwipe={() => console.log("On Swipe!")}
-                onSwipe={(position) => console.log(position)}
+                onSwipe={(position) => setPos(position)}
             >
                 <View
                     style={{
                         width: '100%',
-                        backgroundColor: 'gray',
+                        backgroundColor: '#161616',
                         paddingTop: 16,
                         paddingBottom: 16,
                         paddingLeft: 4,
                         paddingRight: 4,
                         alignItems: 'center',
+                        borderRadius: 5,
+                        overflow: "hidden"
                     }}
                 >
-                    <Text style={{color: "#030303"}}>Swipe me!</Text>
+                    <Text style={{color: "#f3f3f3"}}>So easy</Text>
                 </View>
             </SwipeView>
+
+
             <TouchableHighlight onPress={() => swipeRef.current.resetPosition()}>
                 <Text>Reset</Text>
             </TouchableHighlight>
+            {/*<Text style={{color: "#161616", marginTop: 20}}>{pos}</Text>*/}
+
         </View>
     );
 }
