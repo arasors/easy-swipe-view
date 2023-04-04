@@ -36,13 +36,12 @@ import { SwipeView, EasySwipe } from 'easy-swipe-list';
 3. Use the SwipeView component as a wrapper for your list items:
 ```javascript
 const myLeftOffset = 100;
-const maxLeft = 180;
-  const LeftButton = useCallback(() => (
-    <MyLeftButtonComponent 
-    underlayColor={"#dc0021"} 
+  const MyLeftButtonComponent = () => (
+    <TouchableHighlight
+    underlayColor={"#b00412"} 
     onPress={leftButtonAction} 
     style={{
-        backgroundColor: 'red',
+        backgroundColor: '#ff0015',
         flex: 1,
         alignItems: 'start',
         justifyContent: 'center',
@@ -61,22 +60,60 @@ const maxLeft = 180;
         <Octicons name="trash" size={22} color={"#fff"} />
       </View>
     </TouchableHighlight>
-  ), [deleteLoaded,swipePosition]);
+  );
+
+const myRightOffset = 100;
+  const MyRightButtonComponent = () => (
+    <TouchableHighlight
+    underlayColor={"#0077ff"} 
+    onPress={leftButtonAction} 
+    style={{
+        backgroundColor: '#0088ff',
+        flex: 1,
+        width: '100%',
+        alignItems: 'end',
+        justifyContent: 'center',
+        paddingRight: 8
+        }}
+        >
+      <View 
+        style={{
+            width: `${myLeftOffset}px`,
+            alignItems: 'center',
+            justifyContent: 'center'
+        })}
+       >
+        <Octicons name="archive" size={22} color={"#fff"} />
+      </View>
+    </TouchableHighlight>
+  );
 ```
 and:
 ```javascript
 <SwipeView
   LeftButton={MyLeftButtonComponent} //If you leave it blank, it will be disabled.
-  RightButton={false} //If you leave it blank, it will be disabled.
+  RightButton={MyRightButtonComponent} //If you leave it blank, it will be disabled.
   leftOffset={myLeftOffset}
-  rightOffset={100}
+  rightOffset={myRightOffset}
   maxLeft={150}
   maxRight={150}
   onLeftSwipe={() => console.log("On Swipe!")}
   onRightSwipe={() => console.log("On Swipe!")}
   onSwipe={(position) => console.log(position)}
 >
-  <YourListItem />
+  <View 
+    style={{
+      width: '100%',
+      backgroundColor: 'gray',
+      paddingTop: 6,
+      paddingBottom: 6,
+      paddingLeft: 4,
+      paddingRight: 4,
+      alignItems: 'center'
+    }}
+  >
+    <Text style={{color: "#030303"}}>Swipe me!</Text>
+  </View>
 </SwipeView>
 ```
 

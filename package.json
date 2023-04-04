@@ -1,0 +1,38 @@
+{
+  "name": "easy-swipe-view",
+  "version": "1.1.2",
+  "description": "SwipeView is an npm package that lets you create swipeable views that can be easily used in React Native projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arasors/easy-swipe-view.git"
+  },
+  "keywords": [
+    "swipe",
+    "swipe-menu",
+    "left",
+    "delete",
+    "react-native",
+    "swipe",
+    "swipeable",
+    "list",
+    "reanimated",
+    "gesture",
+    "gesture-handler",
+    "easy-swipe-list",
+    "swipe-list",
+    "swipeable-list",
+    "swipeable-row",
+    "swipeable-item",
+    "swipeable-component"
+  ],
+  "author": "arasors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arasors/easy-swipe-view/issues"
+  },
+  "homepage": "https://github.com/arasors/easy-swipe-view#readme"
+}
