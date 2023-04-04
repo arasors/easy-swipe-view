@@ -1,6 +1,6 @@
 {
   "name": "easy-swipe-view",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "SwipeView is an npm package that lets you create swipeable views that can be easily used in React Native projects.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
