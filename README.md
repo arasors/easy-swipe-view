@@ -1,6 +1,6 @@
 # easy-swipe-view
 
-![](.\preview.gif)
+![](./preview.gif)
 
 A simple and easy-to-use swipeable list component for `React Native` projects, built with Reanimated v2 and react-native-gesture-handler.
 
