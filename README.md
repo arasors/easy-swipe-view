@@ -14,7 +14,15 @@ A simple and easy-to-use swipeable list component for `React Native` projects, b
 First, make sure you have installed [react-native-reanimated v2](https://docs.swmansion.com/react-native-reanimated/docs/installation) and [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs/getting-started) in your project:
 Then, 
 ```
-install `easy-swipe-view`:
+npm install easy-swipe-view
+```
+or
+```
+yarn add easy-swipe-view
+```
+or
+```
+pnpm add easy-swipe-view
 ```
 ## Usage
 
