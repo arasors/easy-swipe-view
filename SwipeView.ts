@@ -18,8 +18,8 @@ interface LeftRightButtonProps {
 interface SwipeViewProps {
   LeftButton?: LeftRightButtonProps;
   RightButton?: LeftRightButtonProps;
-  leftOffset: number;
-  rightOffset: number;
+  leftOffset?: number;
+  rightOffset?: number;
   maxLeft?: number;
   maxRight?: number;
   onLeftSwipe?: (value: number) => void;
@@ -37,10 +37,10 @@ const SwipeView = forwardRef<SwipeViewRef, SwipeViewProps>(
     {
       LeftButton,
       RightButton,
-      leftOffset,
-      rightOffset,
-      maxLeft,
-      maxRight,
+      leftOffset = 100,
+      rightOffset = 100,
+      maxLeft = 150,
+      maxRight = 150,
       onLeftSwipe,
       onRightSwipe,
       onSwipe,

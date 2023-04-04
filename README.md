@@ -90,7 +90,12 @@ const myRightOffset = 100;
 ```
 and:
 ```javascript
+const swipeRef = useRef(null);
+```
+
+```javascript
 <SwipeView
+  ref={swipeRef}
   LeftButton={MyLeftButtonComponent} //If you leave it blank, it will be disabled.
   RightButton={MyRightButtonComponent} //If you leave it blank, it will be disabled.
   leftOffset={myLeftOffset}
@@ -115,6 +120,13 @@ and:
     <Text style={{color: "#030303"}}>Swipe me!</Text>
   </View>
 </SwipeView>
+```
+
+If you want to reset the position by outside intervention;
+```javascript
+<TouchableHighlight onPress={() => swipeRef.current.resetPosition()}>
+  <Text>Reset</Text>
+</TouchableHighlight>
 ```
 
 Please refer to the examples provided in the repository for detailed usage instructions.
