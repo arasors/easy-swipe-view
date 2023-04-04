@@ -112,10 +112,9 @@ const SwipeView = forwardRef<SwipeViewRef, SwipeViewProps>(
       });
 
 
-      const animatedTranslationX = useSharedValue(0);
       useImperativeHandle(ref, () => ({
         resetPosition: () => {
-          animatedTranslationX.value = withSpring(0);
+          translateX.value = withSpring(0);
         },
       }));
 
