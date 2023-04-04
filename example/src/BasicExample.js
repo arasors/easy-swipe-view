@@ -1,7 +1,7 @@
 import {useRef} from "react";
 import {StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import { SwipeView, LeftButton, RightButton } from 'easy-swipe-view';
-r
+
 export default function BasicExample() {
 
     const swipeRef = useRef(null);
@@ -43,11 +43,11 @@ export default function BasicExample() {
                     style={{
                         width: '100%',
                         backgroundColor: 'gray',
-                        paddingTop: 6,
-                        paddingBottom: 6,
+                        paddingTop: 16,
+                        paddingBottom: 16,
                         paddingLeft: 4,
                         paddingRight: 4,
-                        alignItems: 'center'
+                        alignItems: 'center',
                     }}
                 >
                     <Text style={{color: "#030303"}}>Swipe me!</Text>
